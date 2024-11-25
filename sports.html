@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+@font-face {
+	font-family: RG;
+	src: url('Retro Gaming.TTF');
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#title {
+	/* FOR TEXT */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: RG;
+	font-size: 550%;
+	
+	/* FOR THE BOX IMAGE */
+	image-rendering: pixelated;
+	background: url('box.png');
+	background-size: 1000px 200px;
+	background-repeat: no-repeat; 
+
+	width: 1000px;
+	height: 200px;
+
+	position: relative;
+	top: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+div {
+	background-color: lightblue;
+	padding: 100px;
+	margin: 90px;
+}
+
+#boxtitle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: RG;
+	font-size: 495%;
+	transform: translate(0%, -115%);
+}
+
+.back-button {
+	position: absolute;
+	top: 40%; /* Adjust the top position */
+	left: 10%; /* Adjust the left position */
+	image-rendering: pixelated;
+}
+
+.next-button {
+	position: absolute;
+	top: 40%; /* Adjust the top position */
+	right: 10%; /* Adjust the left position */
+	image-rendering: pixelated;
+}
+
+
+.vid-aligner {
+	display: flex; /* Use flexbox for alignment */
+	justify-content: center; /* Center align horizontally */
+	align-items: center; /* Center align vertically */
+	gap: 20px;
+	transform: translate(0%, -40%);
+}
+
+.vid {
+	width: 380px;
+	height: auto;
+	image-rendering: pixelated;
+	transform: translate(0%, 10%);
+}
+
+</style>
+</head>
+<body>
+
+<p id="title">HOBBIES</p>
+
+<a href="index.html">
+	<img src="BACK.png" alt="Back" class="back-button">
+</a>
+	
+<a href="hobbies.html">
+	<img src="PREV.png" alt="Back" class="next-button">
+</a>
+
+<div>
+	<p id="boxtitle">I BADMINTON!!!</p>
+	<div class="vid-aligner">
+		<img src="vid1.gif" alt="vid1" class="vid">
+		<img src="vid2.gif" alt="vid2" class="vid">
+		<img src="vid3.gif" alt="vid3" class="vid">
+	</div>
+</div>
+
+</body>
+</html>

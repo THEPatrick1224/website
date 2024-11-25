@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+@font-face {
+	font-family: RG;
+	src: url('Retro Gaming.TTF');
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#title {
+	/* FOR TEXT */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: RG;
+	font-size: 550%;
+	
+	/* FOR THE BOX IMAGE */
+	image-rendering: pixelated;
+	background: url('box.png');
+	background-size: 1000px 200px;
+	background-repeat: no-repeat; 
+
+	width: 1000px;
+	height: 200px;
+
+	position: relative;
+	top: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+div {
+	background-color: lightblue;
+	padding: 60px;
+	margin: 50px;
+}
+
+.positions {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 200px;
+}
+
+.positions img {
+	image-rendering: pixelated;
+	width: 300px;
+	max-width: 100%;
+}	
+
+</style>
+</head>
+<body>
+
+<p id="title">WELCOME!</p>
+
+<div class="positions">
+	<a href="siteabout.html" target="_blank">
+		<img src="ABOUT.png" alt="ABOUT">
+	</a>
+	<a href="hobbies.html" target="_blank">
+		<img src="HOBBIES.png" alt="HOBBIES">
+	</a>
+</div>
+
+</body>
+</html>
